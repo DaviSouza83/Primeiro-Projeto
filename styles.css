@@ -10,7 +10,7 @@
              color: rgb(255, 255, 255);
              width: 200px;
              display: flex;
-             justify-content: space-between;
+             justify-content: space-around;
              }
              
         #layout-superior button {
@@ -19,6 +19,7 @@
                  margin-right: 5%;
                  font-family: impact;
                  width: 5%;
+               box-shadow: 10px rgba white;
              }
  
            
@@ -34,18 +35,25 @@
              }
  
         .login {
-             background-color: blue;
+             background-color: black;
              color: white;
-             padding: 10px 20px;
+             padding: 5px 10px;
+             width: 10px;
+             height: auto;
              border:none;
              cursor: pointer;
-             transition: background-color 0.3s ease, color 0.3s ease;
+             transition: background-color 1s ease, color 1s ease;
+             border-radius: 10%;
+             box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
              }
         .login:hover {
  
  
              background-color: white;
-             color: rgb(255, 0, 0);
+             color: rgb(0, 0, 0);
+             box-shadow: 10px black;
+            
+          
  }
  
  
@@ -62,8 +70,20 @@
              font-size:25px;
              font-weight: 600;
              color: white;
-             
+             transition: color 1s ease, transform 1s ease;
          }
+
+         #layout-superior div a:hover{
+
+          color: gray;
+          transform: scale(1.1) rotate(2deg);
+     
+
+
+
+         }
+
+
          .controle-interativo {
 
         width: 50px;
@@ -75,11 +95,13 @@
          .controle-interativo:hover {
 
 
-        transform: scale(1.1); rotate(5deg);
-        filter: brightness(0.5);
+        transform: scale(1.1) rotate(5deg);
+        filter: brightness(1);
 
          }
          .controle-interativo:active{
 
             transform: scale(0.9);
          }
+
+        
